@@ -3,6 +3,7 @@
 /* Dernière Mise À  Jour :  2021/08/28 */
 
 $couleurs: ("vert": #124221)
+$images: ("vague": url(../../media/image/wave.svg))
 
 .bg__
     @each $couleur, $i in $couleurs
@@ -14,4 +15,7 @@ $couleurs: ("vert": #124221)
             @for $nbr from 1 through 50                 
                 &--#{pad+$nbr}
                     padding: $nbr*1%
-                    background-color: $i 
+                    background-color: $i
+    @each $image, $compteur in $images
+        &#{$image}
+            background-image: $compteur 
