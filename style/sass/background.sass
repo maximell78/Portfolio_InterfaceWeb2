@@ -1,0 +1,17 @@
+/* background.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+
+$couleurs: ("vert": #124221)
+
+.bg__
+    @each $couleur, $i in $couleurs
+        &#{$couleur}h:hover
+            background-color: $i
+            color: white
+        &#{$couleur}
+            background-color: $i        
+            @for $nbr from 1 through 50                 
+                &--#{pad+$nbr}
+                    padding: $nbr*1%
+                    background-color: $i 

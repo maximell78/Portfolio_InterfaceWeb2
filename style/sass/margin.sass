@@ -1,0 +1,25 @@
+/* margin.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+    
+    /* MARGIN */
+
+$sides: (top, bottom, right, left)
+$sidesNeg: (topNeg, bottomNeg, rightNeg, leftNeg)
+
+@each $sideNeg in $sides
+    .marginNeg__
+        @for $i from -100 through -1
+            &#{$sideNeg}
+                &-#{$i}
+                    margin-#{$sideNeg}: $i+em
+                &-#{$i+px}
+                    margin-#{$sideNeg}: $i+px
+@each $side in $sides
+    .margin__
+        @for $i from 1 through 100
+            &#{$side}
+                &--#{$i}
+                    margin-#{$side}: $i+em
+                &--#{$i+px}
+                    margin-#{$side}: $i+px

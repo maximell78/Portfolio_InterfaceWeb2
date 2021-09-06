@@ -1,0 +1,7 @@
+.logo__nav {
+  background-image: url(../../media/image/logo-nav.svg);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 110px;
+  margin-top: 25px;
+}

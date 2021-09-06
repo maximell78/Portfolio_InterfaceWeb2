@@ -1,0 +1,65 @@
+/* police.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+
+/* POLICE */
+
+$screen-sm-min: 576px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
+$i: 1
+$couleurs: ("blanc": white)
+
+.police__
+    @each $couleur, $compteur in $couleurs        
+        @while $i < 25
+            &#{$i}
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    color: $compteur
+            &#{$i}sm
+                @include sm
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    color: $compteur
+            &#{$i}md
+                @include md
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    color: $compteur
+            &#{$i}lg
+                @include lg
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    color: $compteur
+            &#{$i}u
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    text-decoration: underline
+                    color: $compteur
+            &#{$i}b
+                font-size: $i+px
+                &--#{$couleur}
+                    font-size: $i+px
+                    text-decoration: bold
+                    color: $compteur
+            $i: $i + 1
+    

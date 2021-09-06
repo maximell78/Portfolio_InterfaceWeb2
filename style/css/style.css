@@ -1,0 +1,41 @@
+    /* style.css */
+    /* Programmé par : Maxime Lacroix-Lemire */
+    /* Dernière Mise À  Jour :  2021/08/28 */
+
+/* HOVER DE HR POUR LA NAVBAR */
+
+/* ul {
+list-style-type: none;
+font-size: 2em;
+color: #001f3f;
+margin: 0.5em auto;
+width: 180px;
+}
+ul li {
+
+position: relative;
+cursor: pointer;
+}
+ul li hr {
+border: 0;
+border-top: 3px solid white;
+width: 0;
+position: absolute;
+top: 60%;
+margin: 0;
+transition: width 0.5s ease-out;
+-webkit-transition: width 0.5s ease-out;
+}
+ul li:first-child:hover hr {
+width: 100%;
+}
+ul li:nth-child(2):hover hr {
+width: 100%;
+}
+ul li:nth-child(3):hover hr {
+width: 100%;
+}    
+
+ul li:last-child:hover hr {
+width: 100%;
+} */

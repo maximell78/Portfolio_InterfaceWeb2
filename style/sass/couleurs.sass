@@ -1,0 +1,10 @@
+/* couleurs.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+
+$couleurs: ("blanc": white)
+
+@each $couleur, $i in $couleurs
+    .couleur__
+        &#{$couleur}
+            color: $i
