@@ -4,53 +4,79 @@
 
 <!DOCTYPE html>
 <html lang="fr-ca">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet REACT</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style/css/style.css">
-    <link rel="stylesheet" href="style/css/navbar.css">
-    <link rel="stylesheet" href="style/css/margin.css">
-    <link rel="stylesheet" href="style/css/police.css">
-    <link rel="stylesheet" href="style/css/background.css">
-    <link rel="stylesheet" href="style/css/couleurs.css">
-    <link rel="stylesheet" href="style/css/logo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <link rel="stylesheet" href="style/css/navbar.css">
+        <link rel="stylesheet" href="style/css/margin.css">
+        <link rel="stylesheet" href="style/css/police.css">
+        <link rel="stylesheet" href="style/css/background.css">
+        <link rel="stylesheet" href="style/css/couleurs.css">
+        <link rel="stylesheet" href="style/css/logo.css">
+        <link rel="stylesheet" href="style/css/form.css">
+    </head>
     <body>
 
         <!-- Navbar -->
-    <header class=" bg__vert">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="offset-2 col-9">
-                    <nav class="navbar navbar-expand-md navbar-dark">
-                        <a class="navbar-brand logo__nav" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>                    
-                        <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link police__20lg police__15md" href="#">Projet</a>
-                                    <hr class="marginNeg__top--8px">
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link police__20lg police__15md" href="#">À propos</a>
-                                    <hr class="marginNeg__top--8px">
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link police__20lg police__15md" href="#">Contact</a>
-                                    <hr class="marginNeg__top--8px">
-                                </li>                            
-                            </ul>
-                        </div>
-                    </nav>
+        <header>
+            <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve" class="inverser">
+                <g>                    
+                    <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
+                        <stop  offset="0" style="stop-color:#3b5998"/>
+                        <stop  offset="1" style="stop-color:#42acec"/>
+                    </linearGradient>
+                    <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
+                        c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
+                        V567.8z"/>
+                </g>
+            </svg>
+            </div>
+            <div class="container-fluid marginNeg__top--16 margin__bottom--8">
+                <div class="row">
+                    <div class="offset-2 col-9">
+                        <nav class="navbar navbar-expand-md navbar-dark">
+                            <a class="navbar-brand logo__nav" href="#"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>                    
+                            <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="#">Projet</a>
+                                        <hr class="marginNeg__top--8px mr-3">                                        
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Projet
+                                        </a>
+                                        <hr class="marginNeg__top--8px mr-3"> 
+                                        <div class="dropdown-menu navcolor" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitehtml.html">Site HTML</a>
+                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitephp.html">Site PHP</a>
+                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitereact.html">Site REACT</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="apropos.html">À propos</a>
+                                        <hr class="marginNeg__top--8px mr-3">
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link police__20lg police__15md text-black-50" href="contact.html">Contact</a>
+                                        <hr class="marginNeg__top--8px">
+                                    </li>                            
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
         <footer>
         <div class="container pt-5">
             <div class="row navbarbg">
@@ -66,19 +92,19 @@
                 </div>    
             </div>    
         </div>
-        <div class="container-fluid">
+        <div>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
+            viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
                 <g>
                     <linearGradient id="startwave1_3_" gradientUnits="userSpaceOnUse" x1="1835.995" y1="401.9875" x2="1835.995" y2="-4.414596e-08">
-                        <stop  offset="0" style="stop-color:black"/>
-                        <stop  offset="1" style="stop-color:green"/>
+                        <stop  offset="0" style="stop-color:#3b5998"/>
+                        <stop  offset="1" style="stop-color:#42acec"/>
                     </linearGradient>
                     <path id="startwave1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_3_)" d="M0,402h3671.9l0.1-169.8
                         c0,0-470.9,42.2-926.1-135.6c-548.1-214-976-9-1036,14.3c-146.1,56.5-367.1,233.8-1099.5,53.8C336.1,87.8,0,140.7,0,140.7V402z"/>
                     <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
-                        <stop  offset="0" style="stop-color:black"/>
-                        <stop  offset="1" style="stop-color:green"/>
+                        <stop  offset="0" style="stop-color:#3b5998"/>
+                        <stop  offset="1" style="stop-color:#42acec"/>
                     </linearGradient>
                     <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
                         c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
