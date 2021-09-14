@@ -39,3 +39,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax__matrix--650px {
+  background-image: url(../../media/image/matrix.jpg);
+  /* L’hauteur du Parallax */
+  height: 650px;
+  /* Création de l’effet */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

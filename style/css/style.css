@@ -64,6 +64,9 @@ width: 100%;
     background-color: white;
     border-radius: 100%;
 }
+.fa-braille {
+    color: orange;
+}
 
 .navcolor {    
     background: linear-gradient(0deg, rgba(66,172,236,1) 0%, rgba(59,89,152,1) 100%);

@@ -224,3 +224,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg__maxime {
+  background-image: url(../../media/image/maxime.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
