@@ -1,0 +1,49 @@
+/* police.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+
+/* IMAGE */
+
+$screen-sm-min: 576px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
+$i: 50
+
+.img__           
+    @while $i < 700
+        &#{$i}
+            width: $i+px
+            height: auto
+        &#{$i}sm
+            @include sm
+            width: $i+px
+            height: auto
+        &#{$i}md
+            @include md
+            width: $i+px
+            height: auto
+        &#{$i}lg
+            @include lg
+            width: $i+px
+            height: auto
+        &#{$i}u
+            width: $i+px
+            height: auto
+        &#{$i}b
+            width: $i+px
+            height: auto
+        $i: $i + 50
+    

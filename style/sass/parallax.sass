@@ -1,0 +1,17 @@
+$images: ("matrix": url(../../media/image/matrix.jpg))
+$hauteurs: (300px, 400px, 500px, 600px)
+
+.parallax__
+    @each $image, $compteur in $images
+        @each $hauteur in $hauteurs
+            &#{$image}
+                &--#{$hauteur}
+                    background-image: $compteur
+                    /* L’hauteur du Parallax */
+                    height: $hauteur
+                    /* Création de l’effet */
+                    background-attachment: fixed
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: cover
+        

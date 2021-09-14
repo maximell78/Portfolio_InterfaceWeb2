@@ -18,9 +18,11 @@
         <link rel="stylesheet" href="style/css/couleurs.css">
         <link rel="stylesheet" href="style/css/logo.css">
         <link rel="stylesheet" href="style/css/form.css">
+        <link rel="stylesheet" href="style/css/img.css">
+        <link rel="stylesheet" href="style/css/animcarousel.css">
+        <link rel="stylesheet" href="style/css/parallax.css">
     </head>
-    <body>
-
+    <body class="bg__diagonale">
         <!-- Navbar -->
         <header>
             <div>
@@ -37,22 +39,18 @@
                 </g>
             </svg>
             </div>
-            <div class="container-fluid marginNeg__top--16 margin__bottom--8">
+            <div class="container-fluid margin__bottom--3">
                 <div class="row">
                     <div class="offset-2 col-9">
                         <nav class="navbar navbar-expand-md navbar-dark">
-                            <a class="navbar-brand logo__nav" href="#"></a>
+                            <a class="navbar-brand" href="index.html"><img src="media/image/logo.png" alt="Logo" class="img__100"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>                    
                             <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="#">Projet</a>
-                                        <hr class="marginNeg__top--8px mr-3">                                        
-                                    </li>
+                                <ul class="navbar-nav ml-auto">                                    
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link police__20lg police__17md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Projet
                                         </a>
                                         <hr class="marginNeg__top--8px mr-3"> 
@@ -63,11 +61,11 @@
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="apropos.html">À propos</a>
+                                        <a class="nav-link police__20lg police__17md text-black-50 mr-3" href="apropos.html">À propos</a>
                                         <hr class="marginNeg__top--8px mr-3">
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50" href="contact.html">Contact</a>
+                                        <a class="nav-link police__20lg police__17md text-black-50" href="contact.html">Contact</a>
                                         <hr class="marginNeg__top--8px">
                                     </li>                            
                                 </ul>
@@ -77,45 +75,121 @@
                 </div>
             </div>
         </header>
-    <footer>
-        <div class="container pt-5">
-            <div class="row navbarbg">
-                <div class="col-6">
-                    <h6 class="blanc police__19">
-                        Copyright © 2021 - Tous droits réservés.
-                    </h6>    
+        <section>
+            <div class="carousel pb-5">
+                <figure>
+                <img src="media/image/php1.png" alt="Image 1 PHP">
+                <img src="media/image/php2.png" alt="Image 2 PHP">
+                <img src="media/image/php3.png" alt="Image 3 PHP">
+                <img src="media/image/php4.png" alt="Image 4 PHP">
+                <img src="media/image/php5.png" alt="Image 5 PHP">
+                <img src="media/image/php6.png" alt="Image 6 PHP">
+                <img src="media/image/php7.png" alt="Image 7 PHP">
+                <img src="media/image/php8.png" alt="Image 8 PHP">
+                </figure>
+                <nav>
+                <button class="nav prev">Prev</button>
+                <button class="nav next">Next</button>
+                </nav>
+            </div>
+            <div class="container-fluid parallax__matrix--600px pt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center police__25--blanc">Site Web de nouvelles et de personnages avec PHP</h1>
+                    </div>
+                    <div class="container-fluid pt-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <h2 class="text-center couleur__blanc pt-5">Description du site</h2>
+                                <p class="text-justify couleur__blanc">Site de présentation de nouvelles et de personnages de jeux-vidéos ou l'on affiche les nouvelles par catégories. Il est aussi possible de gérer les nouvelles en les modifiant, supprimant ou tout simplement en ajouter des nouvelles.</p>
+                            </div>
+                            <div class="col-3">
+                                <img src="media/image/codephp.png" alt="PHP Code 1" class="img__300lg">
+                            </div>
+                            <div class="col-3">
+                                <img src="media/image/codephp2.png" alt="PHP Code 2" class="img__300lg">
+                            </div>
+                            <div class="col-3">
+                                <h2 class="text-center couleur__blanc pt-5">Année de conception</h2>
+                                <p class="text-center couleur__blanc pb-5">2021</p>
+                                <h2 class="text-center couleur__blanc pt-3">Cours</h2>
+                                <p class="text-center couleur__blanc">Infrastructure WEB</p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-2 col-8">
+                                <h2 class="text-center couleur__blanc">Description du projet</h2>
+                                <p class="text-justify couleur__blanc">Le site de nouvelles fût mon projet final de mon cours de PHP. Ce fût un très bon défi car j'ai dû mettre en pratique toutes les connaissances apprise durant le cours. Création de base donnée avec MySQL, manipulation de la base de donnée avec le CRUD. La manipulation apprise a été tant du coté du serveur ou sur un site avec PHP.</p>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
-                <div class="offset-2 col-4">
-                    <i class="fab fa-facebook fa-3x mr-5"></i>
-                    <i class="fab fa-instagram fa-3x bgBlanc mr-5"></i>
-                    <i class="fab fa-linkedin fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid pt-5">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="media/image/phplogo.png" alt="PHP" class="img__200lg">
+                            </div>
+                            <div class="col-3">
+                                <img src="media/image/logomysql.jpg" alt="MYSQL" class="img__200lg">
+                            </div>
+                            <div class="col-3">
+                                <img src="media/image/phpmyadminlogo.jpg" alt="PHP My Admin" class="img__200lg">
+                            </div>
+                            <div class="col-3">
+                                <img src="media/image/hostpapalogo.png" alt="HOSTPAPA" class="img__200lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container pt-5">
+                <div class="row navbarbg">
+                    <div class="col-6">
+                        <h6 class="blanc police__19">
+                            Copyright © 2021 - Tous droits réservés.
+                        </h6>    
+                    </div>
+                    <div class="offset-2 col-4">
+                        <i class="fab fa-facebook fa-3x mr-5"></i>
+                        <i class="fab fa-instagram fa-3x bgBlanc mr-5"></i>
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </div>    
                 </div>    
-            </div>    
-        </div>
-        <div>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
-                <g>
-                    <linearGradient id="startwave1_3_" gradientUnits="userSpaceOnUse" x1="1835.995" y1="401.9875" x2="1835.995" y2="-4.414596e-08">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_3_)" d="M0,402h3671.9l0.1-169.8
-                        c0,0-470.9,42.2-926.1-135.6c-548.1-214-976-9-1036,14.3c-146.1,56.5-367.1,233.8-1099.5,53.8C336.1,87.8,0,140.7,0,140.7V402z"/>
-                    <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
-                        c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
-                        V567.8z"/>
-                </g>
-            </svg>
-        </div>
-    </footer>
+            </div>
+            <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
+                    <g>
+                        <linearGradient id="startwave1_3_" gradientUnits="userSpaceOnUse" x1="1835.995" y1="401.9875" x2="1835.995" y2="-4.414596e-08">
+                            <stop  offset="0" style="stop-color:#3b5998"/>
+                            <stop  offset="1" style="stop-color:#42acec"/>
+                        </linearGradient>
+                        <path id="startwave1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_3_)" d="M0,402h3671.9l0.1-169.8
+                            c0,0-470.9,42.2-926.1-135.6c-548.1-214-976-9-1036,14.3c-146.1,56.5-367.1,233.8-1099.5,53.8C336.1,87.8,0,140.7,0,140.7V402z"/>
+                        <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
+                            <stop  offset="0" style="stop-color:#3b5998"/>
+                            <stop  offset="1" style="stop-color:#42acec"/>
+                        </linearGradient>
+                        <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
+                            c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
+                            V567.8z"/>
+                    </g>
+                </svg>
+            </div>
+        </footer>
     </body>
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/68cd163438.js" crossorigin="anonymous"></script>
+<script src="js/animcarousel.js"></script>

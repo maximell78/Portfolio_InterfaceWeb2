@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* police.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/08/28 */
+/* IMAGE */
+.img__50 {
+  width: 50px;
+  height: auto;
+}
+.img__50sm {
+  width: 50px;
+  height: auto;
+}
+.img__50md {
+  width: 50px;
+  height: auto;
+}
+.img__50lg {
+  width: 50px;
+  height: auto;
+}
+.img__50u {
+  width: 50px;
+  height: auto;
+}
+.img__50b {
+  width: 50px;
+  height: auto;
+}
+.img__100 {
+  width: 100px;
+  height: auto;
+}
+.img__100sm {
+  width: 100px;
+  height: auto;
+}
+.img__100md {
+  width: 100px;
+  height: auto;
+}
+.img__100lg {
+  width: 100px;
+  height: auto;
+}
+.img__100u {
+  width: 100px;
+  height: auto;
+}
+.img__100b {
+  width: 100px;
+  height: auto;
+}
+.img__150 {
+  width: 150px;
+  height: auto;
+}
+.img__150sm {
+  width: 150px;
+  height: auto;
+}
+.img__150md {
+  width: 150px;
+  height: auto;
+}
+.img__150lg {
+  width: 150px;
+  height: auto;
+}
+.img__150u {
+  width: 150px;
+  height: auto;
+}
+.img__150b {
+  width: 150px;
+  height: auto;
+}
+.img__200 {
+  width: 200px;
+  height: auto;
+}
+.img__200sm {
+  width: 200px;
+  height: auto;
+}
+.img__200md {
+  width: 200px;
+  height: auto;
+}
+.img__200lg {
+  width: 200px;
+  height: auto;
+}
+.img__200u {
+  width: 200px;
+  height: auto;
+}
+.img__200b {
+  width: 200px;
+  height: auto;
+}
+.img__250 {
+  width: 250px;
+  height: auto;
+}
+.img__250sm {
+  width: 250px;
+  height: auto;
+}
+.img__250md {
+  width: 250px;
+  height: auto;
+}
+.img__250lg {
+  width: 250px;
+  height: auto;
+}
+.img__250u {
+  width: 250px;
+  height: auto;
+}
+.img__250b {
+  width: 250px;
+  height: auto;
+}
+.img__300 {
+  width: 300px;
+  height: auto;
+}
+.img__300sm {
+  width: 300px;
+  height: auto;
+}
+.img__300md {
+  width: 300px;
+  height: auto;
+}
+.img__300lg {
+  width: 300px;
+  height: auto;
+}
+.img__300u {
+  width: 300px;
+  height: auto;
+}
+.img__300b {
+  width: 300px;
+  height: auto;
+}
+.img__350 {
+  width: 350px;
+  height: auto;
+}
+.img__350sm {
+  width: 350px;
+  height: auto;
+}
+.img__350md {
+  width: 350px;
+  height: auto;
+}
+.img__350lg {
+  width: 350px;
+  height: auto;
+}
+.img__350u {
+  width: 350px;
+  height: auto;
+}
+.img__350b {
+  width: 350px;
+  height: auto;
+}
+.img__400 {
+  width: 400px;
+  height: auto;
+}
+.img__400sm {
+  width: 400px;
+  height: auto;
+}
+.img__400md {
+  width: 400px;
+  height: auto;
+}
+.img__400lg {
+  width: 400px;
+  height: auto;
+}
+.img__400u {
+  width: 400px;
+  height: auto;
+}
+.img__400b {
+  width: 400px;
+  height: auto;
+}
+.img__450 {
+  width: 450px;
+  height: auto;
+}
+.img__450sm {
+  width: 450px;
+  height: auto;
+}
+.img__450md {
+  width: 450px;
+  height: auto;
+}
+.img__450lg {
+  width: 450px;
+  height: auto;
+}
+.img__450u {
+  width: 450px;
+  height: auto;
+}
+.img__450b {
+  width: 450px;
+  height: auto;
+}
+.img__500 {
+  width: 500px;
+  height: auto;
+}
+.img__500sm {
+  width: 500px;
+  height: auto;
+}
+.img__500md {
+  width: 500px;
+  height: auto;
+}
+.img__500lg {
+  width: 500px;
+  height: auto;
+}
+.img__500u {
+  width: 500px;
+  height: auto;
+}
+.img__500b {
+  width: 500px;
+  height: auto;
+}
+.img__550 {
+  width: 550px;
+  height: auto;
+}
+.img__550sm {
+  width: 550px;
+  height: auto;
+}
+.img__550md {
+  width: 550px;
+  height: auto;
+}
+.img__550lg {
+  width: 550px;
+  height: auto;
+}
+.img__550u {
+  width: 550px;
+  height: auto;
+}
+.img__550b {
+  width: 550px;
+  height: auto;
+}
+.img__600 {
+  width: 600px;
+  height: auto;
+}
+.img__600sm {
+  width: 600px;
+  height: auto;
+}
+.img__600md {
+  width: 600px;
+  height: auto;
+}
+.img__600lg {
+  width: 600px;
+  height: auto;
+}
+.img__600u {
+  width: 600px;
+  height: auto;
+}
+.img__600b {
+  width: 600px;
+  height: auto;
+}
+.img__650 {
+  width: 650px;
+  height: auto;
+}
+.img__650sm {
+  width: 650px;
+  height: auto;
+}
+.img__650md {
+  width: 650px;
+  height: auto;
+}
+.img__650lg {
+  width: 650px;
+  height: auto;
+}
+.img__650u {
+  width: 650px;
+  height: auto;
+}
+.img__650b {
+  width: 650px;
+  height: auto;
+}

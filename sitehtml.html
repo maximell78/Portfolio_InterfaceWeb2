@@ -18,104 +18,210 @@
         <link rel="stylesheet" href="style/css/couleurs.css">
         <link rel="stylesheet" href="style/css/logo.css">
         <link rel="stylesheet" href="style/css/form.css">
+        <link rel="stylesheet" href="style/css/img.css">
+        <link rel="stylesheet" href="style/css/anim.css">
     </head>
-    <body>
-
-        <!-- Navbar -->
-        <header>
-            <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve" class="inverser">
-                <g>                    
-                    <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
-                        c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
-                        V567.8z"/>
-                </g>
-            </svg>
+    <body class="bg__diagonale">
+    <!-- Navbar -->
+    <header>
+        <div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve" class="inverser">
+            <g>                    
+                <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
+                    <stop  offset="0" style="stop-color:#3b5998"/>
+                    <stop  offset="1" style="stop-color:#42acec"/>
+                </linearGradient>
+                <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
+                    c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
+                    V567.8z"/>
+            </g>
+        </svg>
+        </div>
+        <div class="container-fluid margin__bottom--8">
+            <div class="row">
+                <div class="offset-2 col-9">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <a class="navbar-brand" href="index.html"><img src="media/image/logo.png" alt="Logo" class="img__100"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>                    
+                        <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">                                    
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link police__20lg police__17md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Projet
+                                    </a>
+                                    <hr class="marginNeg__top--8px mr-3"> 
+                                    <div class="dropdown-menu navcolor" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item police__17lg police__13md navcolor" href="sitehtml.html">Site HTML</a>
+                                        <a class="dropdown-item police__17lg police__13md navcolor" href="sitephp.html">Site PHP</a>
+                                        <a class="dropdown-item police__17lg police__13md navcolor" href="sitereact.html">Site REACT</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link police__20lg police__17md text-black-50 mr-3" href="apropos.html">À propos</a>
+                                    <hr class="marginNeg__top--8px mr-3">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link police__20lg police__17md text-black-50" href="contact.html">Contact</a>
+                                    <hr class="marginNeg__top--8px">
+                                </li>                            
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="container-fluid marginNeg__top--16 margin__bottom--8">
+        </div>
+    </header>
+    
+        <section>
+            <div class="container">
                 <div class="row">
-                    <div class="offset-2 col-9">
-                        <nav class="navbar navbar-expand-md navbar-dark">
-                            <a class="navbar-brand logo__nav" href="#"></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>                    
-                            <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="#">Projet</a>
-                                        <hr class="marginNeg__top--8px mr-3">                                        
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Projet
-                                        </a>
-                                        <hr class="marginNeg__top--8px mr-3"> 
-                                        <div class="dropdown-menu navcolor" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitehtml.html">Site HTML</a>
-                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitephp.html">Site PHP</a>
-                                            <a class="dropdown-item police__17lg police__13md navcolor" href="sitereact.html">Site REACT</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="apropos.html">À propos</a>
-                                        <hr class="marginNeg__top--8px mr-3">
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50" href="contact.html">Contact</a>
-                                        <hr class="marginNeg__top--8px">
-                                    </li>                            
-                                </ul>
-                            </div>
-                        </nav>
+                    <div class="col-12">
+                        <h1 class="text-center pb-5">Podcast pas d'bas</h1>
                     </div>
                 </div>
             </div>
-        </header>
-    <footer>
-        <div class="container pt-5">
-            <div class="row navbarbg">
-                <div class="col-6">
-                    <h6 class="blanc police__19">
-                        Copyright © 2021 - Tous droits réservés.
-                    </h6>    
+            <div class="container">
+                <div class="row">
+                    <div class="offset-3">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active img__500">
+                                    <img class="d-block w-100 mx-auto" src="media/image/podcast1.png" alt="Podcastpasdbas1">
+                                </div>
+                                <div class="carousel-item img__500">
+                                    <img class="d-block w-100 mx-auto" src="media/image/podcast2.png" alt="Podcastpasdbas2">
+                                </div>
+                                <div class="carousel-item img__450">
+                                    <img class="d-block w-100 mx-auto" src="media/image/podcast3.png" alt="Podcastpasdbas3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="offset-2 col-4">
-                    <i class="fab fa-facebook fa-3x mr-5"></i>
-                    <i class="fab fa-instagram fa-3x bgBlanc mr-5"></i>
-                    <i class="fab fa-linkedin fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid pt-5 pb-5">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="offset-2">
+                                                <img src="media/image/logohtml.png" alt="HTML" class="img__150">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="offset-5">
+                                                <img src="media/image/css.png" alt="CSS" class="img__150">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img src="media/image/Bootstrap.png" alt="Boostrap" class="img__150">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="container pb-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img src="media/image/codehtml1.png" alt="CSS" class="img__300">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-3">
+                                        <div class="row">
+                                            <div class="offset-3">
+                                                <img src="media/image/codehtml2.png" alt="CSS" class="img__300">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-1 col-4">
+                        <h2 class="text-center">Description du site</h2>
+                        <p class="text-justify">Podcast pas d'bas est un projet entre amis où les animateurs discute de tout de sortes de sujets. Du cinéma aux jeux-vidéos en passant par les bières de microbrasseries! L'idée est de varier l'ambiance d'une édition à l'autre et, également, d'avoir des invités différents qui se spécialisent ou sont passionnés par un sujet en particulier</p>
+                        <h2 class="text-center">Année de conception</h2>
+                        <p class="text-center">2020</p>
+                        <h2 class="text-center">Description du Projet</h2>
+                        <p class="text-justify">Podcast pas d'bas fût mon premier gros projet dans mon cours de HTML / CSS. J'ai dû mettre en pratique plusieurs composants vu durant le cours. J'ai utilisé Boostrap pour aligner et rendre responsive mes pages, utilisé des "cards", "carousel", "parallax" pour donner vie à mon site.</p>
+                        <h2 class="text-center">Cours</h2>
+                        <p class="text-center">Intégration des interfaces web 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt-5 pb-5">
+                <div class="row">
+                    <div class="offset-4 col-3 text-center">
+                        <a class="cta" href="https://maximell78.github.io/InterfaceWebProjetFinal/index.html" target="_blank">
+                            <span>Voir le site</span>
+                            <span>
+                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#3b5998"></path>
+                                <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#3b5998"></path>
+                                <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#3b5998"></path>
+                                </g>
+                            </svg>
+                            </span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container pt-5">
+                <div class="row navbarbg">
+                    <div class="col-6">
+                        <h6 class="blanc police__19">
+                            Copyright © 2021 - Tous droits réservés.
+                        </h6>    
+                    </div>
+                    <div class="offset-2 col-4">
+                        <i class="fab fa-facebook fa-3x mr-5"></i>
+                        <i class="fab fa-instagram fa-3x bgBlanc mr-5"></i>
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </div>    
                 </div>    
-            </div>    
-        </div>
-        <div>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
-                <g>
-                    <linearGradient id="startwave1_3_" gradientUnits="userSpaceOnUse" x1="1835.995" y1="401.9875" x2="1835.995" y2="-4.414596e-08">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_3_)" d="M0,402h3671.9l0.1-169.8
-                        c0,0-470.9,42.2-926.1-135.6c-548.1-214-976-9-1036,14.3c-146.1,56.5-367.1,233.8-1099.5,53.8C336.1,87.8,0,140.7,0,140.7V402z"/>
-                    <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
-                        c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
-                        V567.8z"/>
-                </g>
-            </svg>
-        </div>
-    </footer>
+            </div>
+            <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve">
+                    <g>
+                        <linearGradient id="startwave1_3_" gradientUnits="userSpaceOnUse" x1="1835.995" y1="401.9875" x2="1835.995" y2="-4.414596e-08">
+                            <stop  offset="0" style="stop-color:#3b5998"/>
+                            <stop  offset="1" style="stop-color:#42acec"/>
+                        </linearGradient>
+                        <path id="startwave1_1_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_3_)" d="M0,402h3671.9l0.1-169.8
+                            c0,0-470.9,42.2-926.1-135.6c-548.1-214-976-9-1036,14.3c-146.1,56.5-367.1,233.8-1099.5,53.8C336.1,87.8,0,140.7,0,140.7V402z"/>
+                        <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
+                            <stop  offset="0" style="stop-color:#3b5998"/>
+                            <stop  offset="1" style="stop-color:#42acec"/>
+                        </linearGradient>
+                        <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
+                            c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
+                            V567.8z"/>
+                    </g>
+                </svg>
+            </div>
+        </footer>
     </body>
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/68cd163438.js" crossorigin="anonymous"></script>
+<script src="js/animbouton.js"></script>

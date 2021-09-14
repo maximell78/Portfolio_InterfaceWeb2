@@ -1,11 +1,27 @@
 /* margin.css */
 /* Programmé par : Maxime Lacroix-Lemire */
 /* Dernière Mise À  Jour :  2021/08/28 */
-    
-    /* MARGIN */
+
+/* MARGIN */
+
+$screen-sm-min: 576px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+
+@mixin sm
+    @media screen and (min-width: #{$screen-sm-min})
+        @content
+
+@mixin md
+    @media screen and (min-width: #{$screen-md-min})
+        @content
+
+@mixin lg
+    @media screen and (min-width: #{$screen-lg-min})
+        @content
 
 $sides: (top, bottom, right, left)
-$sidesNeg: (topNeg, bottomNeg, rightNeg, leftNeg)
+$sidesNegs: (topNeg, bottomNeg, rightNeg, leftNeg)
 
 @each $sideNeg in $sides
     .marginNeg__
@@ -15,6 +31,24 @@ $sidesNeg: (topNeg, bottomNeg, rightNeg, leftNeg)
                     margin-#{$sideNeg}: $i+em
                 &-#{$i+px}
                     margin-#{$sideNeg}: $i+px
+            &#{$sideNeg}sm
+                @include sm
+                    &-#{$i}                    
+                        margin-#{$sideNeg}: $i+em
+                    &-#{$i+px}
+                        margin-#{$sideNeg}: $i+px
+            &#{$sideNeg}md
+                @include md
+                    &-#{$i}
+                        margin-#{$sideNeg}: $i+em
+                    &-#{$i+px}
+                        margin-#{$sideNeg}: $i+px
+            &#{$sideNeg}lg
+                @include lg
+                    &-#{$i}
+                        margin-#{$sideNeg}: $i+em
+                    &-#{$i+px}
+                        margin-#{$sideNeg}: $i+px
 @each $side in $sides
     .margin__
         @for $i from 1 through 100

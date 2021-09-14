@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="style/css/background.css">
         <link rel="stylesheet" href="style/css/couleurs.css">
         <link rel="stylesheet" href="style/css/logo.css">
+        <link rel="stylesheet" href="style/css/anim.css">
+        <link rel="stylesheet" href="style/css/img.css">
     </head>
     <body>
         <!-- Navbar -->
@@ -36,22 +38,18 @@
                 </g>
             </svg>
             </div>
-            <div class="container-fluid marginNeg__top--12 margin__bottom--8">
+            <div class="container-fluid margin__bottom--8">
                 <div class="row">
                     <div class="offset-2 col-9">
                         <nav class="navbar navbar-expand-md navbar-dark">
-                            <a class="navbar-brand logo__nav" href="#"></a>
+                            <a class="navbar-brand" href="index.html"><img src="media/image/logo.png" alt="Logo" class="img__100"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>                    
                             <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="#">Projet</a>
-                                        <hr class="marginNeg__top--8px mr-3">                                        
-                                    </li>
+                                <ul class="navbar-nav ml-auto">                                    
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link police__20lg police__17md text-black-50 mr-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Projet
                                         </a>
                                         <hr class="marginNeg__top--8px mr-3"> 
@@ -62,11 +60,11 @@
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50 mr-3" href="apropos.html">À propos</a>
+                                        <a class="nav-link police__20lg police__17md text-black-50 mr-3" href="apropos.html">À propos</a>
                                         <hr class="marginNeg__top--8px mr-3">
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link police__20lg police__15md text-black-50" href="contact.html">Contact</a>
+                                        <a class="nav-link police__20lg police__17md text-black-50" href="contact.html">Contact</a>
                                         <hr class="marginNeg__top--8px">
                                     </li>                            
                                 </ul>
@@ -108,10 +106,10 @@
                                     <h3>Je conçois des sites internet avec minutie avec respect des maquettes proposées</h3>
                                 </div>
                                 <div class="col-12 pt-3">                                    
-                                    <ol>
-                                        <li>Intégrateur HTML - CSS</li>
-                                        <li>Développeur PHP</li>
-                                        <li>Concepteur de site Web avec REACT</li>
+                                    <ol class="ml16">
+                                        <li>1 - Intégrateur HTML - CSS</li>
+                                        <li>2 - Développeur PHP</li>
+                                        <li>3 - Concepteur de site Web avec REACT</li>
                                     </ol>
                                 </div>
                             </div>
@@ -125,7 +123,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <img src="media/image/teletravail.jpg" alt="Télétravail" class="img img-fluid">
+                        <img src="media/image/info.jpg" alt="Télétravail" class="img img-fluid">
                     </div>
                     <div class="col-6">
                         <div class="container-fluid">
@@ -134,10 +132,10 @@
                                     <h3>Mes valeurs</h3>
                                 </div>
                                 <div class="col-12 pt-3">                                    
-                                    <ol>
-                                        <li>Intégrité</li>
-                                        <li>Transaparence</li>
-                                        <li>Rigueur</li>
+                                    <ol class="ml13">
+                                        <li>1 - Intégrité</li>
+                                        <li>2 - Transaparence</li>
+                                        <li>3 - Rigueur</li>
                                     </ol>
                                 </div>
                             </div>
@@ -145,7 +143,10 @@
                     </div>                    
                 </div>
             </div>
-        </section>    
+        </section>
+        <section>
+            
+        </section>
         <footer>
             <div class="container pt-5 pb-5">
                 <div class="row navbarbg">
@@ -188,3 +189,44 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/68cd163438.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+.add({
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+}).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+});
+
+anime.timeline({loop: true})
+.add({
+    targets: '.ml13 .letter',
+    translateY: [100,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 300 + 30 * i
+}).add({
+    targets: '.ml13 .letter',
+    translateY: [0,-100],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: (el, i) => 100 + 30 * i
+});
+</script>

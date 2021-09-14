@@ -211,4 +211,16 @@
 }
 .bg__vague {
   background-image: url(../../media/image/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg__matrix {
+  background-image: url(../../media/image/matrix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg__diagonale {
+  background-image: url(../../media/image/couleur_diagonale.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

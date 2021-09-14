@@ -3,7 +3,7 @@
 /* Dernière Mise À  Jour :  2021/08/28 */
 
 $couleurs: ("vert": #124221)
-$images: ("vague": url(../../media/image/wave.svg))
+$images: ("vague": url(../../media/image/wave.svg),"matrix": url(../../media/image/matrix.jpg), "diagonale": url(../../media/image/couleur_diagonale.jpg))
 
 .bg__
     @each $couleur, $i in $couleurs
@@ -19,5 +19,5 @@ $images: ("vague": url(../../media/image/wave.svg))
     @each $image, $compteur in $images
         &#{$image}
             background-image: $compteur
-
-            
+            background-repeat: no-repeat
+            background-size: cover
