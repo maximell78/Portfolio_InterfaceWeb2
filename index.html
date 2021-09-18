@@ -174,63 +174,62 @@
                 </svg>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="https://kit.fontawesome.com/68cd163438.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+
+        var textWrapper = document.querySelector('.ml16');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml16 .letter',
+            translateY: [-100,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 30 * i
+        }).add({
+            targets: '.ml16',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml13 .letter',
+            translateY: [100,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 300 + 30 * i
+        }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+        </script>
+
+        <!-- Register service worker. -->
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+        </script>
+        <script src="js/install.js"></script>
     </body>
 </html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="https://kit.fontawesome.com/68cd163438.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script>
-
-var textWrapper = document.querySelector('.ml16');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-var textWrapper = document.querySelector('.ml13');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-.add({
-    targets: '.ml16 .letter',
-    translateY: [-100,0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-}).add({
-    targets: '.ml16',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-});
-
-anime.timeline({loop: true})
-.add({
-    targets: '.ml13 .letter',
-    translateY: [100,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 300 + 30 * i
-}).add({
-    targets: '.ml13 .letter',
-    translateY: [0,-100],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1200,
-    delay: (el, i) => 100 + 30 * i
-});
-</script>
-
-<!-- Register service worker. -->
-<script>
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-            .then((reg) => {
-                console.log('Service worker registered.', reg);
-            });
-    });
-}
-</script>
-<script src="js/install.js"></script>
