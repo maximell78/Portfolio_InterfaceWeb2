@@ -1,9 +1,9 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v19';
+const CACHE_NAME = 'static-cache-v20';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
-    'maximell78/Portfolio_InterfaceWeb2/index.html'    
+    '/index.html'    
 ];
 
 self.addEventListener('install', (evt) => {
