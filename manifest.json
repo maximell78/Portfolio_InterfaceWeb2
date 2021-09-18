@@ -2,7 +2,7 @@
     "name": "Portfolio de Maxime Lacroix-Lemire",
     "short_name": "Portfolio MLL",    
     "icons": [{
-        "src": "Portfolio_InterfaceWeb2/media/icons/icon-72x72.png",
+        "src": "media/icons/icon-72x72.png",
         "sizes": "72x72",
         "type": "image/png",
         "purpose": "maskable any"
