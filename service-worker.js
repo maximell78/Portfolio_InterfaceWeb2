@@ -1,9 +1,60 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v21';
+const CACHE_NAME = 'static-cache-v22';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
-    'index.html'    
+    'offline.html',
+    'apropos.html',
+    'contact.html',
+    'index.html',
+    'sitehtml.html',
+    'sitephp.html',
+    'bootstrap/css/bootstrap.css',
+    'style/css/style.css',
+    'style/css/margin.css',
+    'style/css/police.css',
+    'style/css/background.css',
+    'style/css/couleurs.css',
+    'style/css/logo.css',
+    'style/css/anim.css',
+    'style/css/img.css',
+    'js/anim.js',
+    'js/animbouton.js',
+    'js/animcarousel.js',
+    'js/form.js',
+    'media/image/404.png',
+    'media/image/Bootstrap.png',
+    'media/image/codehtml1.png',
+    'media/image/codehtml2.png',
+    'media/image/codephp.png',
+    'media/image/codephp2.png',
+    'media/image/couleur_diagonale.jpg',
+    'media/image/css.png',
+    'media/image/hostpapalogo.png',
+    'media/image/info.jpg',
+    'media/image/logo-nav.svg',
+    'media/image/logo.png',
+    'media/image/logoampps.png',
+    'media/image/logohtml.png',
+    'media/image/logomysql.jpg',
+    'media/image/matrix.jpg',
+    'media/image/maxime.jpg',
+    'media/image/navbar-wave.svg',
+    'media/image/php1.png',
+    'media/image/php2.png',
+    'media/image/php3.png',
+    'media/image/php4.png',
+    'media/image/php5.png',
+    'media/image/php6.png',
+    'media/image/php7.png',
+    'media/image/php8.png',
+    'media/image/phplogo.png',
+    'media/image/phpmyadminlogo.jpg',
+    'media/image/podcast1.png',
+    'media/image/podcast2.png',
+    'media/image/podcast3.png',
+    'media/image/teletravail.jpg',
+    'media/image/wave.svg'    
 ];
 
 self.addEventListener('install', (evt) => {
