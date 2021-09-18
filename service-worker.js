@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v22';
+const CACHE_NAME = 'static-cache-v23';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -9,15 +9,20 @@ const FILES_TO_CACHE = [
     'index.html',
     'sitehtml.html',
     'sitephp.html',
-    'bootstrap/css/bootstrap.css',
-    'style/css/style.css',
-    'style/css/margin.css',
-    'style/css/police.css',
-    'style/css/background.css',
-    'style/css/couleurs.css',
-    'style/css/logo.css',
+    'bootstrap/css/bootstrap.css',    
     'style/css/anim.css',
+    'style/css/animcarousel.css',
+    'style/css/background.css',
+    'style/css/bouton.css',
+    'style/css/couleurs.css',
+    'style/css/form.css',
     'style/css/img.css',
+    'style/css/logo.css',
+    'style/css/margin.css',
+    'style/css/mediaQuerry.css',
+    'style/css/parallax.css',
+    'style/css/police.css',
+    'style/css/style.css',
     'js/anim.js',
     'js/animbouton.js',
     'js/animcarousel.js',
