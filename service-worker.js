@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v23';
+const CACHE_NAME = 'static-cache-v24';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -27,6 +27,7 @@ const FILES_TO_CACHE = [
     'js/animbouton.js',
     'js/animcarousel.js',
     'js/form.js',
+    'js/jquery.easing.min.js',
     'media/image/404.png',
     'media/image/Bootstrap.png',
     'media/image/codehtml1.png',
