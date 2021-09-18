@@ -1,4 +1,4 @@
-{
+    {
     "name": "Portfolio de Maxime Lacroix-Lemire",
     "short_name": "Portfolio MLL",
     "theme_color": "#1976d2",
@@ -55,4 +55,4 @@
         "purpose": "maskable any"
     }
     ]
-}
+    }
