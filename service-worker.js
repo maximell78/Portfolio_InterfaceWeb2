@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v4';
+const CACHE_NAME = 'static-cache-v8';
 
 self.addEventListener('activate', (evt) => {
 console.log('[ServiceWorker] Activate');
@@ -26,7 +26,7 @@ const FILES_TO_CACHE = [
     'contact.html',
     'index.html',
     'sitehtml.html',
-    'sitephp.html'
+    'sitephp.html',
 ];
 
 
@@ -55,7 +55,7 @@ self.addEventListener('fetch', (evt) => {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                        return cache.match('https://maximell78.github.io/InterfaceWebProjetFinal/offline.html');
+                        return cache.match('Portfolio_InterfaceWeb2/offline.html');
                     });
             })
     );
