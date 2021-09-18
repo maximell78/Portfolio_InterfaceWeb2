@@ -224,3 +224,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg__offline {
+  background-image: url(../../media/image/404.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

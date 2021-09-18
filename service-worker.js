@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v8.1';
+const CACHE_NAME = 'static-cache-v8.5';
 
 self.addEventListener('activate', (evt) => {
 console.log('[ServiceWorker] Activate');
@@ -27,6 +27,21 @@ const FILES_TO_CACHE = [
     'index.html',
     'sitehtml.html',
     'sitephp.html',
+    'bootstrap/css/bootstrap.css',
+    'style/css/style.css',
+    'style/css/navbar.css',
+    'style/css/margin.css',
+    'style/css/police.css',
+    'style/css/background.css',
+    'style/css/couleurs.css',
+    'style/css/logo.css',
+    'style/css/anim.css',
+    'style/css/img.css',
+    'js/anim.js',
+    'animbouton.js',
+    'animcarousel.js',
+    'form.js',
+    'install.js',
 ];
 
 
