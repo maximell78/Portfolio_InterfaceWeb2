@@ -6,7 +6,7 @@ const FILES_TO_CACHE = [
     'offline.html',
     'apropos.html',
     'contact.html',
-    'index.html',
+    'maximell78/Portfolio_InterfaceWeb2/index.html',
     'sitehtml.html',
     'sitephp.html',
     'bootstrap/css/bootstrap.css',
