@@ -99,7 +99,7 @@ self.addEventListener('fetch', (evt) => {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                                                return cache.match('/maximell78/Portfolio_InterfaceWeb2/offline.html');
+                                                return cache.match('/Portfolio_InterfaceWeb2/offline.html');
                     });
             })
     );
