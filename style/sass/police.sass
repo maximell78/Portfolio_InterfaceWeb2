@@ -2,6 +2,10 @@
 /* Programmé par : Maxime Lacroix-Lemire */
 /* Dernière Mise À  Jour :  2021/08/28 */
 
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap')
+
 /* POLICE */
 
 $screen-sm-min: 576px
@@ -31,6 +35,9 @@ $couleurs: ("blanc": white)
                 &--#{$couleur}
                     font-size: $i+px
                     color: $compteur
+                &--cara
+                    font-size: $i+px
+                    font-family: 'Carattere', cursive
             &#{$i}sm
                 @include sm
                     font-size: $i+px
@@ -61,5 +68,4 @@ $couleurs: ("blanc": white)
                     font-size: $i+px
                     text-decoration: bold
                     color: $compteur
-            $i: $i + 1
-    
+            $i: $i + 1    
