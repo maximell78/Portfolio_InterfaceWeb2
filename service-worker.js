@@ -74,7 +74,7 @@ const FILES_TO_CACHE = [
     'media/image/podcast2.png',
     'media/image/podcast3.png',
     'media/image/teletravail.jpg',
-    'media/image/wave.svg',
+    'media/image/wave.svg'
 ];
 
 
