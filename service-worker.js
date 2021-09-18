@@ -1,6 +1,5 @@
-
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v4';
 
 self.addEventListener('activate', (evt) => {
 console.log('[ServiceWorker] Activate');
@@ -20,35 +19,16 @@ evt.waitUntil(
 self.clients.claim();
 });
 
-
-//Add list of files to cache here.
-const FILES_TO_CACHE = [
-];
-
-self.addEventListener('install', (evt) => {
-console.log('[ServiceWorker] Install');
-// Precache static resources here.
-
-self.skipWaiting();
-});
-
-self.addEventListener('activate', (evt) => {
-console.log('[ServiceWorker] Activate');
-//Remove previous cached data from disk.
-
-self.clients.claim();
-});
-
-self.addEventListener('fetch', (evt) => {
-console.log('[ServiceWorker] Fetch', evt.request.url);
-//Add fetch event handler here.
-
-});
-
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
+    'apropos.html',
+    'contact.html',
+    'index.html',
+    'sitehtml.html',
+    'sitephp.html'
 ];
+
 
 self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
@@ -62,7 +42,6 @@ self.addEventListener('install', (evt) => {
     self.skipWaiting();
 });
 
-// Gérer la perte de connection internet 
 
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
@@ -76,8 +55,8 @@ self.addEventListener('fetch', (evt) => {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                        return cache.match('offline.html');
+                        return cache.match('https://maximell78.github.io/InterfaceWebProjetFinal/offline.html');
                     });
             })
-);
-});
+    );
+}); 

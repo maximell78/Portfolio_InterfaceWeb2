@@ -8,25 +8,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="media/image/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="57x57" href="/media/image/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/media/image/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/media/image/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/media/image/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/media/image/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/media/image/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/media/image/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/media/image/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/media/image/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/media/image/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/media/image/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/media/image/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <title>Portfolio de Maxime Lacroix-Lemire</title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Weather PWA">
+        <meta name="description" content="Le Portfolio de Maxime Lacroix-Lemire">
+        <meta name="theme-color" content="#2F3BA2" />
+        <link rel="apple-touch-icon" href="media/icons/icon-152x152.png">
+        <link rel="icon" type="image/png" href="media/image/favicon/favicon.ico" />        
+        <link rel="manifest" href="/manifest.json">        
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="style/css/style.css">
         <link rel="stylesheet" href="style/css/navbar.css">
@@ -37,6 +26,7 @@
         <link rel="stylesheet" href="style/css/logo.css">
         <link rel="stylesheet" href="style/css/anim.css">
         <link rel="stylesheet" href="style/css/img.css">
+        <title>Portfolio de Maxime Lacroix-Lemire</title>
     </head>
     <body class="bg__diagonale">
         <!-- Navbar -->
@@ -44,22 +34,22 @@
         <header>
             <div>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve" class="inverser">
-                <g>                    
-                    <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
-                        <stop  offset="0" style="stop-color:#3b5998"/>
-                        <stop  offset="1" style="stop-color:#42acec"/>
-                    </linearGradient>
-                    <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
-                        c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
-                        V567.8z"/>
-                </g>
-            </svg>
+                    viewBox="0 0 3672.1 567.8" enable-background="new 0 0 3672.1 567.8" xml:space="preserve" class="inverser">
+                    <g>                    
+                        <linearGradient id="startwave1_4_" gradientUnits="userSpaceOnUse" x1="1836.0255" y1="567.7883" x2="1836.0255" y2="145.0611">
+                            <stop  offset="0" style="stop-color:#3b5998"/>
+                            <stop  offset="1" style="stop-color:#42acec"/>
+                        </linearGradient>
+                        <path id="startwave1_2_" fill-rule="evenodd" clip-rule="evenodd" fill="url(#startwave1_4_)" d="M0,567.8h3672l0.1-178.6
+                            c0,0-495.2,44.3-973.9-142.6c-576.4-225-1026.3-9.4-1089.5,15c-153.7,59.4-386,245.9-1156.2,56.6C164.1,237.4,0,273.2,0,273.2
+                            V567.8z"/>
+                    </g>
+                </svg>
             </div>
-            <div class="container-fluid margin__bottom--8">
+            <div class="container-fluid margin__bottom--8 bg__simple-vague">
                 <div class="row">
                     <div class="offset-2 col-9">
-                        <nav class="navbar navbar-expand-md navbar-dark marginNeg__top--14">
+                        <nav class="navbar navbar-expand-md navbar-dark">
                             <a class="navbar-brand" href="index.html"><img src="media/image/logo.png" alt="Logo" class="img__100"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-braille fa-2x"></i>
@@ -251,11 +241,11 @@ anime.timeline({loop: true})
 <!-- Register service worker. -->
 <script>
 if ('serviceWorker' in navigator) {
-window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js')
-        .then((reg) => {
-        console.log('Service worker registered.', reg);
-        });
-});
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+                console.log('Service worker registered.', reg);
+            });
+    });
 }
 </script>

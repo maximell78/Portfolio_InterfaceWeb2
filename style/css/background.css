@@ -209,11 +209,6 @@
   padding: 50%;
   background-color: #124221;
 }
-.bg__vague {
-  background-image: url(../../media/image/wave.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .bg__matrix {
   background-image: url(../../media/image/matrix.jpg);
   background-repeat: no-repeat;
