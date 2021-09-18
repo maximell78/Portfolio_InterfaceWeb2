@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v11';
+const CACHE_NAME = 'static-cache-v12';
 
 self.addEventListener('activate', (evt) => {
 console.log('[ServiceWorker] Activate');
@@ -41,7 +41,6 @@ const FILES_TO_CACHE = [
     'js/animbouton.js',
     'js/animcarousel.js',
     'js/form.js',
-    'js/install.js',
     'media/image/404.png',
     'media/image/Bootstrap.png',
     'media/image/codehtml1.png',
