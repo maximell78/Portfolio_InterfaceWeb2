@@ -1,4 +1,3 @@
-
 .carousel {
     padding: 20px;
     perspective: 500px;
@@ -18,10 +17,18 @@
     transform-origin: 50% 50% -482.8427124746px;
 }
 .carousel figure img {
-    width: 100%;
+    width: 75%;
     box-sizing: border-box;
     padding: 0 40px;
     opacity: 0.9;
+}
+@media (min-width: 576px) {
+    .carousel figure img {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;
+        opacity: 0.9;
+    }
 }
 .carousel figure img:not(:first-of-type) {
     position: absolute;
