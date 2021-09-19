@@ -1,17 +1,63 @@
+$screen-sm-min: 576px
+$screen-md-min: 768px
+$screen-lg-min: 975px
+
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
 $images: ("matrix": url(../../media/image/matrix.jpg))
-$hauteurs: (300px, 400px, 500px, 600px, 650px)
+$hauteurs: (300, 400, 500, 600, 650, 700, 750, 800, 850)
 
 .parallax__
     @each $image, $compteur in $images
         @each $hauteur in $hauteurs
-            &#{$image}
+            &#{$image}                
                 &--#{$hauteur}
                     background-image: $compteur
                     /* L’hauteur du Parallax */
-                    height: $hauteur
+                    height: $hauteur+px
                     /* Création de l’effet */
                     background-attachment: fixed
                     background-position: center
                     background-repeat: no-repeat
                     background-size: cover
+                @include sm
+                    &--#{$hauteur}sm
+                        background-image: $compteur
+                        /* L’hauteur du Parallax */
+                        height: $hauteur+px
+                        /* Création de l’effet */
+                        background-attachment: fixed
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: cover
+                @include md
+                    &--#{$hauteur}md
+                        background-image: $compteur
+                        /* L’hauteur du Parallax */
+                        height: $hauteur+px
+                        /* Création de l’effet */
+                        background-attachment: fixed
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: cover
+                @include lg
+                    &--#{$hauteur}lg
+                        background-image: $compteur
+                        /* L’hauteur du Parallax */
+                        height: $hauteur+px
+                        /* Création de l’effet */
+                        background-attachment: fixed
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: cover
         

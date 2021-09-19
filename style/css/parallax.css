@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.parallax__matrix--300px {
+.parallax__matrix--300 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */
   height: 300px;
@@ -9,7 +9,43 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax__matrix--400px {
+@media (min-width: 576px) {
+  .parallax__matrix--300sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--300md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--300lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 300px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--400 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */
   height: 400px;
@@ -19,7 +55,43 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax__matrix--500px {
+@media (min-width: 576px) {
+  .parallax__matrix--400sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 400px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--400md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 400px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--400lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 400px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--500 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */
   height: 500px;
@@ -29,7 +101,43 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax__matrix--600px {
+@media (min-width: 576px) {
+  .parallax__matrix--500sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 500px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--500md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 500px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--500lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 500px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--600 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */
   height: 600px;
@@ -39,7 +147,43 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax__matrix--650px {
+@media (min-width: 576px) {
+  .parallax__matrix--600sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 600px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--600md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 600px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--600lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 600px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--650 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */
   height: 650px;
@@ -48,4 +192,224 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 576px) {
+  .parallax__matrix--650sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 650px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--650md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 650px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--650lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 650px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--700 {
+  background-image: url(../../media/image/matrix.jpg);
+  /* L’hauteur du Parallax */
+  height: 700px;
+  /* Création de l’effet */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .parallax__matrix--700sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 700px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--700md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 700px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--700lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 700px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--750 {
+  background-image: url(../../media/image/matrix.jpg);
+  /* L’hauteur du Parallax */
+  height: 750px;
+  /* Création de l’effet */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .parallax__matrix--750sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 750px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--750md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 750px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--750lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 750px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--800 {
+  background-image: url(../../media/image/matrix.jpg);
+  /* L’hauteur du Parallax */
+  height: 800px;
+  /* Création de l’effet */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .parallax__matrix--800sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 800px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--800md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 800px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--800lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 800px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.parallax__matrix--850 {
+  background-image: url(../../media/image/matrix.jpg);
+  /* L’hauteur du Parallax */
+  height: 850px;
+  /* Création de l’effet */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .parallax__matrix--850sm {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 850px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax__matrix--850md {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 850px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 975px) {
+  .parallax__matrix--850lg {
+    background-image: url(../../media/image/matrix.jpg);
+    /* L’hauteur du Parallax */
+    height: 850px;
+    /* Création de l’effet */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

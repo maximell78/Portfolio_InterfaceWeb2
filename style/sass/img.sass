@@ -4,9 +4,14 @@
 
 /* IMAGE */
 
+$screen-xs-min: 330px
 $screen-sm-min: 576px
 $screen-md-min: 768px
 $screen-lg-min: 992px
+
+@mixin xs
+    @media (min-width: #{$screen-xs-max})
+        @content
 
 @mixin sm
     @media (min-width: #{$screen-sm-min})
@@ -26,7 +31,11 @@ $i: 50
     @while $i < 2000
         &#{$i}
             width: $i+px
-            height: auto            
+            height: auto
+        &#{$i}xs
+            @include xs
+                width: $i+px
+                height: auto
         &#{$i}sm
             @include sm
                 width: $i+px
@@ -37,12 +46,6 @@ $i: 50
                 height: auto
         &#{$i}lg
             @include lg
-                width: $i+px
-                height: auto
-        &#{$i}u
-                width: $i+px
-                height: auto
-        &#{$i}b
                 width: $i+px
                 height: auto
         $i: $i + 50
