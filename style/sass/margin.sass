@@ -56,4 +56,22 @@ $sidesNegs: (topNeg, bottomNeg, rightNeg, leftNeg)
                 &--#{$i}
                     margin-#{$side}: $i+em
                 &--#{$i+px}
-                    margin-#{$side}: $i+px
+                    margin-#{$side}: $i+px        
+            &#{$side}sm
+                @include sm
+                    &--#{$i}
+                        margin-#{$side}: $i+em
+                    &--#{$i+px}
+                        margin-#{$side}: $i+px        
+            &#{$side}md
+                @include md
+                    &--#{$i}
+                        margin-#{$side}: $i+em
+                    &--#{$i+px}
+                        margin-#{$side}: $i+px        
+            &#{$side}lg
+                @include lg
+                    &--#{$i}
+                        margin-#{$side}: $i+em
+                    &--#{$i+px}
+                        margin-#{$side}: $i+px
