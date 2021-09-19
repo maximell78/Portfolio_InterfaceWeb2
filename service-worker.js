@@ -1,3 +1,7 @@
+// service-worker.js
+// Programmé par : Maxime Lacroix-Lemire
+// Dernière Mise À  Jour :  2021/09/18
+
 //Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v26';
 

@@ -1,3 +1,7 @@
+// animcarousel.js
+// Programmé par : Maxime Lacroix-Lemire
+// Dernière Mise À  Jour :  2021/09/18
+
 "use strict";
 
 var carousel = document.querySelector(".carousel"),

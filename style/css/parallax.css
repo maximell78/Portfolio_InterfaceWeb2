@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* parallax.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/09/18 */
 .parallax__matrix--300 {
   background-image: url(../../media/image/matrix.jpg);
   /* L’hauteur du Parallax */

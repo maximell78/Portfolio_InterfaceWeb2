@@ -1,3 +1,7 @@
+// animbouton.js
+// Programmé par : Maxime Lacroix-Lemire
+// Dernière Mise À  Jour :  2021/09/18
+
 let deferredInstallPrompt = null;
 const installButton = document.getElementById('butInstall');
 installButton.addEventListener('click', installPWA);
