@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="style/css/couleurs.css">
         <link rel="stylesheet" href="style/css/logo.css">
         <link rel="stylesheet" href="style/css/img.css">
+        <link rel="stylesheet" href="style/css/form.css">
         <title>Contact</title>
     </head>
     <body  class="bg__diagonale">
@@ -71,8 +72,8 @@
                 </div>
             </div>
         </header>
-        <!-- Formulaire -->
-        <section>            
+        <!-- Formulaire de base -->
+        <!-- <section>            
             <form action="merci.html">
                 <div class="container text-center">
                     <div class="row">
@@ -138,6 +139,45 @@
                 <button type="reset" class="btn btn-secondary">Réinitialiser</button>
                 <button type="submit" class="btn btn-primary">Soumettre le formulaire</button>
                 </div>
+            </form>
+        </section> -->
+
+        <!-- Formulaire avec Animation-->
+        <section>
+            <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Informations personnelles</li>
+                    <li>Moyen de contact</li>
+                    <li>Description du Projet</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Informations personnelles</h2>
+                    <h3 class="fs-subtitle">Vos informations sont confidentielle et ne seront jamais vendu</h3>
+                    <input type="text" name="prenom" placeholder="Votre Prénom" required />
+                    <input type="text" name="nom" placeholder="Votre nom de famille" required/>        
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Moyens de contacts</h2>
+                    <h3 class="fs-subtitle">Parlons de votre projet ensemble!</h3>
+                    <input type="text" name="email" placeholder="Votre adresse de courriel" />
+                    <input type="text" name="tel" placeholder="Votre numéro de téléphone" />
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Description du Projet</h2>
+                    <h3 class="fs-subtitle">Donnez moi des détails de votre projet</h3>
+                    <input type="text" name="sujet" placeholder="Sujet" required/>
+                    <input type="text" name="language" placeholder="HTML/CSS, REACT, PHP" required/>
+                    <textarea name="description" placeholder="Veuillez inscrire une brève description de votre projet" required></textarea>
+                    <input type="text" name="budget" placeholder="Veuillez inscrire une approximation de votre budget" required>
+                    <input type="submit" name="previous" class="previous action-button" value="Previous"/>
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" onclick="window.location.href = '/merci.html'"/>
+                </fieldset>
             </form>
         </section>
         <footer>
